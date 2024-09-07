@@ -1,0 +1,15 @@
+{
+  "name": "omnifood",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev:server": "npx live-server --host=0.0.0.0 --port=5500",
+    "start": "npm run dev:server"
+  },
+  "description": "Landing page for omnifood",
+  "license": "ISC",
+  "author": "apt138",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
