@@ -229,14 +229,6 @@
 
 /* Mobiles phones (below 550px) */
 @media only screen and (max-width: 34.375em) {
-  html {
-    font-size: 31.25%;
-  }
-
-  .pricing-plan {
-    width: 90%;
-  }
-
   .section-pricing .container:last-child {
     padding: 0 var(--sp-64);
   }
@@ -246,6 +238,53 @@
   }
 
   .logos > img {
-    height: 2rem;
+    height: 1.4rem;
+  }
+
+  .pricing-plan:nth-child(2)::after {
+    top: 5%;
+    right: -8%;
+  }
+
+  .cta-form,
+  .cta,
+  .testimonials,
+  .grid-2-cols,
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 50rem;
+    grid-row: 1;
+  }
+
+  .cta .btn {
+    margin-top: var(--sp-12);
+  }
+
+  .meal {
+    width: 85%;
+    justify-self: center;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(5rem);
+  }
+
+  .hero-text-box {
+    padding: var(--sp-32);
   }
 }
