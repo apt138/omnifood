@@ -155,6 +155,7 @@ body {
   border: none;
   background: none;
   cursor: pointer;
+  z-index: 99;
 
   display: none;
 }
@@ -167,6 +168,24 @@ body {
 
 .icon-mobile-nav[name="close-outline"] {
   display: none;
+}
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8rem;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: var(--color-white-95tr);
+  z-index: 99;
+  box-shadow: var(--shadow-form-subtle);
+}
+
+.sticky .section-hero {
+  /* should be height of header nav */
+  margin-top: 8.6rem;
 }
 /* ############################ */
 /* ###### Hero ##### */
